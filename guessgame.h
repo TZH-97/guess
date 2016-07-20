@@ -1,22 +1,21 @@
 #ifndef GUESS_H
 #define GUESS_H
 
-// guessing game class declaration
+// Class declaration
 
-class Guess
+class Guess {
 
-{
-
-	private:
-	int Guesses;
+private:
+    int Guesses;
 	int guess;
 	int answer;
-	char userChoice;	// print2() function [Play again?]
+	char userChoice;
 	int n;
 
-	public:
+public:
 	void print();
 	void print2(); 
 
 };
+
 #endif
