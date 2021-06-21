@@ -42,13 +42,12 @@ void Guess::print() {
 
 
 void Guess::print2() {
-    
 	cout << "Play again? Y for Yes, N for No. ";
 	cin >> userChoice;
 	
-    if (userChoice == 'Y' || userChoice == 'y')
+    if ((char) tolower(userChoice) == 'y') {
         print();
-        
+    }   
 }
 
 int main() {
